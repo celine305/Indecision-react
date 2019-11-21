@@ -1,18 +1,19 @@
 let count = 0;
+
 const addOne= () => {
   count++;
   renderCounterApp();
-}
+};
 
 const minusOne= () => {
   count--;
   renderCounterApp();
-}
+};
 
 const reset= () => {
   count = 0;
   renderCounterApp();
-}
+};
 
 const appRoot = document.getElementById('app');
 
@@ -26,6 +27,6 @@ const renderCounterApp = () => {
     </div>
   );
   ReactDOM.render(templateTwo, appRoot);
-}
+};
 
-renderCounterApp()
+renderCounterApp();
